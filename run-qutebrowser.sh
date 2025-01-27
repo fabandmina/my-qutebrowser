@@ -1,3 +1,4 @@
 #!/bin/bash
 echo "Running QuteBrowser..."
-poetry run qutebrowser "$@"
+# Run in a subshell
+(cd $( dirname -- "$( readlink -f -- "$0"; )"; ) && poetry run qutebrowser "$@")
