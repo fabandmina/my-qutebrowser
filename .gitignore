@@ -1,2 +1,3 @@
 my_qutebrowser/*
 poetry.lock
+.envrc
